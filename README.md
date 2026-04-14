@@ -2,19 +2,6 @@
 
 Application Windows Forms pour aider les enfants à pratiquer les calculs de base : addition, soustraction, multiplication et division.
 
-## Prérequis
-
-- Windows
-- .NET 10 SDK
-- Visual Studio 2026 ou la commande `dotnet`
-
-## Lancer l'application
-
-Depuis Visual Studio, ouvrez la solution et démarrez le projet.
-
-Ou en ligne de commande, à la racine du projet :
-
-- `dotnet run`
 
 ## Comment utiliser l'application
 
@@ -29,7 +16,7 @@ Au démarrage, l'écran de configuration s'affiche.
 
 ### 2. Configurer la séance
 
-Choisissez ensuite les paramètres de la partie :
+Choisissez ensuite les paramètres de la session :
 
 - le type de calcul : addition, soustraction, multiplication ou division ;
 - la valeur minimale ;
@@ -38,11 +25,11 @@ Choisissez ensuite les paramètres de la partie :
 
 Le minimum doit être inférieur ou égal au maximum.
 
-### 3. Démarrer la partie
+### 3. Démarrer la session
 
-Cliquez sur `On commence` pour lancer la séance.
+Cliquez sur `On commence` pour lancer la session.
 
-Pendant la partie :
+Pendant la session :
 
 - un calcul apparaît à l'écran ;
 - tapez la réponse dans la zone prévue ;
@@ -81,4 +68,4 @@ Les résultats sont enregistrés dans le dossier :
 
 - `App\Data\<NomUtilisateur>`
 
-Chaque séance est stockée dans un fichier JSON.
+Chaque jour est stocké dans un fichier JSON.

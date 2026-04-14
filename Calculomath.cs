@@ -92,6 +92,7 @@ namespace Calculomath
         public Calculomath()
         {
             InitializeComponent();
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             ChargerUtilisateursExistants();
             DockPanelsAndResizeClientWindow();
             InitialiserPanelAnalyse();
