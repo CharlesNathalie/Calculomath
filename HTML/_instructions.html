@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Instructions - Calculomath</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            color: #0f4c81;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        ul {
+            margin-top: 8px;
+        }
+
+        .note {
+            padding: 12px 16px;
+            background-color: #eef6ff;
+            border-left: 4px solid #0f4c81;
+            border-radius: 4px;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            background-color: #f3f4f6;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculomath</h1>
+    <p>
+        Application Windows Forms pour aider les enfants à pratiquer les calculs de base :
+        addition, soustraction, multiplication et division.
+    </p>
+
+    <section>
+        <h2>Comment utiliser l'application</h2>
+
+        <h3>1. Choisir un utilisateur</h3>
+        <p>Au démarrage, l'écran de configuration s'affiche.</p>
+        <ul>
+            <li>Pour un nouvel utilisateur, entrez un nom puis cliquez sur <strong>Créer utilisateur</strong>.</li>
+            <li>Pour un utilisateur existant, sélectionnez son nom dans la liste.</li>
+        </ul>
+        <p class="note">Il faut créer ou sélectionner un utilisateur avant de commencer.</p>
+
+        <h3>2. Configurer la séance</h3>
+        <p>Choisissez ensuite les paramètres de la session :</p>
+        <ul>
+            <li>le type de calcul : addition, soustraction, multiplication ou division ;</li>
+            <li>la valeur minimale ;</li>
+            <li>la valeur maximale ;</li>
+            <li>la durée de la séance en minutes.</li>
+        </ul>
+        <p>Le minimum doit être inférieur ou égal au maximum.</p>
+
+        <h3>3. Démarrer la session</h3>
+        <p>Cliquez sur <strong>On commence</strong> pour lancer la session.</p>
+        <p>Pendant la session :</p>
+        <ul>
+            <li>un calcul apparaît à l'écran ;</li>
+            <li>tapez la réponse dans la zone prévue ;</li>
+            <li>appuyez sur <strong>Entrée</strong> pour valider.</li>
+        </ul>
+
+        <h3>4. Répondre aux calculs</h3>
+        <ul>
+            <li>Si la réponse est correcte, le calcul suivant apparaît automatiquement.</li>
+            <li>Si la réponse est incorrecte, la zone devient rouge et l'application affiche une aide visuelle.</li>
+            <li>La touche <strong>Suppr</strong> vide la zone de réponse.</li>
+        </ul>
+        <p>Le compteur affiche le nombre de calculs réussis pendant la séance.</p>
+
+        <h3>5. Arrêter la séance</h3>
+        <p>Vous pouvez arrêter la séance avec le bouton <strong>Arrêt</strong>.</p>
+        <p>Si le temps prévu est écoulé, la séance se termine automatiquement.</p>
+        <p>Les résultats sont enregistrés automatiquement pour l'utilisateur sélectionné.</p>
+    </section>
+
+    <section>
+        <h2>Analyse des résultats</h2>
+        <p>Le bouton <strong>Analyse</strong> permet d'afficher les archives de l'utilisateur courant.</p>
+        <p>L'écran d'analyse permet de consulter les résultats par période :</p>
+        <ul>
+            <li>quotidien ;</li>
+            <li>hebdomadaire ;</li>
+            <li>mensuel ;</li>
+            <li>annuel.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Emplacement des données</h2>
+        <p>Les résultats sont enregistrés dans le dossier :</p>
+        <ul>
+            <li><code>App\Data\&lt;NomUtilisateur&gt;</code></li>
+        </ul>
+        <p>Chaque jour est stocké dans un fichier JSON.</p>
+    </section>
+
+</body>
+</html>
